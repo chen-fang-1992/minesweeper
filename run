@@ -1,0 +1,10 @@
+#!/bin/bash
+BIN_PATH=$PWD/bin
+SRC_PATH=$PWD/src
+rm -rf $BIN_PATH
+mkdir $BIN_PATH
+cd $SRC_PATH
+javac -d $BIN_PATH com/xxx/minesweeper/*.java
+cd $BIN_PATH
+java com.xxx.minesweeper.MineSweeper
+rm -rf $BIN_PATH

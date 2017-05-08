@@ -1,6 +1,6 @@
 package com.xxx.minesweeper.generator;
 
-public class HintGenerator extends MapGenerator {
+public class HintsGenerator extends MapGenerator {
 
 	private char[][] mine;
 	private char[][] hint;
@@ -20,7 +20,7 @@ public class HintGenerator extends MapGenerator {
 	}
 
 	/** default constructor */
-	public HintGenerator(){
+	public HintsGenerator(){
 		init();
 	}
 

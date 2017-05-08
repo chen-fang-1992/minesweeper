@@ -1,9 +1,9 @@
 package com.xxx.minesweeper.generator;
 
-public class FrameGenerator extends MapGenerator {
+public class BoardGenerator extends MapGenerator {
 
 	/** default constructor */
-	public FrameGenerator(){
+	public BoardGenerator(){
 		init();
 	}
 

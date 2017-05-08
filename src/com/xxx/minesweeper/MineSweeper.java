@@ -11,7 +11,7 @@ public class MineSweeper {
 	public void run() {
 		String err;
 		// For first input, generate frame
-		FrameGenerator fg = new FrameGenerator();
+		BoardGenerator fg = new BoardGenerator();
 		err = fg.process();
 		if (err != null) {
 			exception(err);
@@ -25,7 +25,7 @@ public class MineSweeper {
 			exception(err);
 		}
 		// Generate hint and if succeed then print
-		HintGenerator hg = new HintGenerator();
+		HintsGenerator hg = new HintsGenerator();
 		hg.setLine(fg.getLine());
 		hg.setColumn(fg.getColumn());
 		hg.setMine(mg.getMine());
