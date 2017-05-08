@@ -1,5 +1,7 @@
 package com.xxx.minesweeper;
 
+import com.xxx.minesweeper.generator.*;
+
 public class MineSweeper {
 
 	/** Default constructor */

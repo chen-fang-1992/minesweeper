@@ -1,10 +1,17 @@
-package com.xxx.minesweeper;
+package com.xxx.minesweeper.generator;
 
-public class HintGenerator extends MinesGenerator {
+public class HintGenerator extends MapGenerator {
 
+	private char[][] mine;
 	private char[][] hint;
 
 	/** Encapsulate field */
+	public char[][] getMine() {
+		return mine;
+	}
+	public void setMine(char[][] mine) {
+		this.mine = mine;
+	}
 	public char[][] getHint() {
 		return hint;
 	}
@@ -20,6 +27,7 @@ public class HintGenerator extends MinesGenerator {
 	/** Initialize the generator */
 	@Override
 	public void init() {
+		mine = null;
 		hint = null;
 	}
 

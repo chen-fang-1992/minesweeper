@@ -1,8 +1,8 @@
-package com.xxx.minesweeper;
+package com.xxx.minesweeper.generator;
 
-public class MinesGenerator extends FrameGenerator {
+public class MinesGenerator extends MapGenerator {
 
-	protected char[][] mine;
+	private char[][] mine;
 
 	/** Encapsulate field */
 	public char[][] getMine() {

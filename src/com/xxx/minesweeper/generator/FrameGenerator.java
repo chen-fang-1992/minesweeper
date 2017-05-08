@@ -1,26 +1,6 @@
-package com.xxx.minesweeper;
+package com.xxx.minesweeper.generator;
 
-import java.util.Scanner;
-
-public class FrameGenerator implements MapGenerator {
-
-	protected int line;
-	protected int column;
-	protected Scanner sc = new Scanner(System.in);
-
-	/** Encapsulate field */
-	public int getLine() {
-		return line;
-	}
-	public void setLine(int line) {
-		this.line = line;
-	}
-	public int getColumn() {
-		return column;
-	}
-	public void setColumn(int column) {
-		this.column = column;
-	}
+public class FrameGenerator extends MapGenerator {
 
 	/** default constructor */
 	public FrameGenerator(){
